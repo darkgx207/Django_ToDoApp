@@ -1,0 +1,34 @@
+/* inner is body of home template */
+@import "style.css";
+.inner {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.taskblock {
+    background-color: rgb(241, 41, 101);
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    border: solid rgb(230, 60, 9);
+    
+    
+}
+
+.taskblock h2 {
+    margin: 0.3rem 2rem;
+    color: rgb(255, 255, 255);
+    font-family: var(--font1);
+    
+    
+}
+
+.taskblock:hover {
+    background-color: rgb(175, 222, 228);
+    transform: scale(1.01);
+    transition: 0.3s;
+    
+}

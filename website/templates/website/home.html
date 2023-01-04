@@ -1,0 +1,19 @@
+{% extends 'website/core.html' %}
+
+{% block content %}
+
+    
+{% comment %} {% for i in db %}
+    <div class="taskblock">
+         <h2> {{ i }} </h2>
+    </div>
+{% endfor %} {% endcomment %}
+
+{% for i in test %}
+    <div class="taskblock">
+         <h2> {{ i }} </h2>
+    </div>
+{% endfor %}
+   
+  
+{% endblock %} 

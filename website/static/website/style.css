@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+:root{
+    --color1 : rgb(19, 241, 160);
+    --font1: 'Fira Sans', sans-serif;
+    --font-color: rgb(2, 1, 1);
+    --color2 : rgb(104, 19, 241);
+
+}
+html {
+    scrollbar-width: thin;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+h2 {
+    color: aliceblue;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--color1);
+    height: 3rem;
+    align-items: center;
+    width: 100%;
+
+}
+nav h1 a {
+    font-family: var(--font1);
+    color: var(--font-color);
+    margin: auto 2rem;
+    text-transform: uppercase;
+    transition: all 0.03s;
+
+}
+nav:hover h1 a:hover {
+    color: rgb(243, 240, 237);
+    opacity: 1;
+    text-decoration: underline;
+}
+nav:hover h1 a:not(hover) {
+    opacity: 0.5;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    background-color: var(--color2);
+    width: 100%;
+    height: 100vh;
+    z-index: -999;
+    
+}
+.item {
+    background: linear-gradient(45deg,rgb(0, 0, 0),rgb(45, 54, 66));
+    margin:auto;
+    padding: 2rem;
+    width: 75rem;
+    height: 40rem;
+    border-radius: 15px; border-style: solid;
+    box-shadow: 0.6rem 0.5rem 15px;
+    filter: opacity(0.8);
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.281);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(245, 242, 242, 0.411);
+    border-radius: 20px;
+
+}
