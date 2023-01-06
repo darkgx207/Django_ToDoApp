@@ -5,7 +5,7 @@
     --font-color: rgb(2, 1, 1);
     --color2 : rgb(104, 19, 241);
     --border-color :rgb(100, 153, 214);
-
+    --btngreen: rgb(11, 197, 42);
 }
 html {
     scrollbar-width: thin;
@@ -93,3 +93,5 @@ nav:hover h1 a:not(hover) {
     flex-direction: column;
     align-items: center;
 }
+
+

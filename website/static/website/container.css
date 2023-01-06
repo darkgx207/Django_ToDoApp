@@ -39,7 +39,7 @@
 
 .editbtn{
     margin: 5rem 1rem;
-    background-color: rgb(11, 197, 42);
+    background-color: var(--btngreen);
     padding: 0.5rem 1rem;
     font-family: var(--font1);
     font-size: large;
@@ -57,4 +57,30 @@
 .descriptionfield {
     max-width: 60rem;
     overflow-wrap: break-word;
+}
+
+
+
+
+
+/* Create page css */
+
+input , textarea{
+    background-color: rgba(0, 0, 0, 0.425);
+    color:white;
+    padding: 0.2rem;
+    font-size: 14pt;
+}
+
+
+.submitbtn {
+    background-color: var(--btngreen);
+    padding: 0.5rem 1rem;
+    font-family: var(--font1);
+    font-size: large;
+    border-radius: 1rem;
+}
+
+.submitbtn:active {
+    filter: brightness(2);
 }
