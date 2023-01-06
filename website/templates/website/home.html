@@ -3,10 +3,16 @@
 {% block content %}
 
     {% for i in db %}
-        <div class="taskblock ">
-            <h2> {{ i.done }}  </h2>
-            <div class="inputblock {{ i.done }}">
-                <input type="checkbox" name="{{i}}" id="{{i.id}}">
+        <div class="taskblock {%if i.done %} done {% endif %}">
+            <h2> {{ i.task }}  </h2>
+             <div class="inputblock ">
+                <h2 type="checkbox" id="{{i.id}}">
+                    {% if i.done %}
+                        Feito!
+                    {% else %}
+                        Pendente
+                    {% endif %}
+                </h2> 
             </div>
         </div>
     {% endfor %}

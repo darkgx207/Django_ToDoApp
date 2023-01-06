@@ -1,5 +1,6 @@
 /* inner is body of home template */
 @import "style.css";
+
 .inner {
     color: aliceblue;
     display: flex;
@@ -9,7 +10,7 @@
 }
 
 .taskblock {
-    /* background-color: rgb(241, 41, 101); */
+
     margin: 0.5rem;
     border-radius: 0.5rem;
     display: flex;
@@ -32,16 +33,6 @@
     transition: 0.3s;
 }
 
-
-.taskblock .inputblock{
-    display: flex;
-    margin-right: 2rem;
-}
-
-.taskblock .inputblock input{
-    transform: scale(1.5);
-}
-
-.True {
-    background-color: rgb(71, 235, 22);
+.done{
+    background-color: rgb(84, 221, 137);
 }

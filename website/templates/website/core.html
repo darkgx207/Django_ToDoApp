@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'website/style.css' %}" >
     <link rel="stylesheet" href="{% static 'website/container.css' %}">
-    <script src="{% static 'website/main.js' %}" defer></script>
-    <title> {{ xxx }} </title>
+    <title> ToDo Django </title>
 </head>
 <body>
     <main class='main'>
         <nav>
-            <h1><a href="#">Home</a></h1>
-            <h1><a href="#">create</a></h1>    
+            <h1><a href="{% url 'homepage' %}">Home</a></h1>
+            <h1><a href="admin">create</a></h1>    
         </nav>
       
         <div class="container">

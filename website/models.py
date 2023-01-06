@@ -8,9 +8,3 @@ class Tasks(models.Model):
     def __str__(self):
         return self.task
 
-class OwnerTask(models.Model):
-    name = models.CharField(max_length=20)
-    fk_task = models.ForeignKey(Tasks, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.name
