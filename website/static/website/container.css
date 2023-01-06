@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid rgb(230, 60, 9);
+    border: solid var(--border-color);
 }
 
 .taskblock h2 {

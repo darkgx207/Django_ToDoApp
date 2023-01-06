@@ -3,6 +3,7 @@
 {% block content %}
 
     {% for i in db %}
+        <a href="">
         <div class="taskblock {%if i.done %} done {% endif %}">
             <h2> {{ i.task }}  </h2>
              <div class="inputblock ">
@@ -15,6 +16,7 @@
                 </h2> 
             </div>
         </div>
+    </a>
     {% endfor %}
    
   
