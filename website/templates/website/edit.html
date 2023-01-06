@@ -14,12 +14,13 @@
                 <p>{{ id.description }}</p>
             </div>
          
-
+           
             <div style="display:flex">
-                <button class='editbtn'> Editar </button>
                 <form action="{% url 'editpage_id' int=id.id %}" method="post">
                     {% csrf_token %}
+                    <button type='submit' class='editbtn' name='mudar' value='{{id.id}}'> mudar </button>
                     <button type='submit' class='editbtn delete' name='delete' value='{{id.id}}' > Excluir </button>
+                    
                 </form>
                 
             </div>

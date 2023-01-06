@@ -32,6 +32,9 @@ nav{
     width: 100%;
 
 }
+.navbtn {
+    display: flex;
+}
 nav h1 a {
     font-family: var(--font1);
     color: var(--font-color);
