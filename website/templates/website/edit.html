@@ -17,7 +17,11 @@
 
             <div style="display:flex">
                 <button class='editbtn'> Editar </button>
-                <button class='editbtn delete'> Excluir </button>
+                <form action="{% url 'editpage_id' int=id.id %}" method="post">
+                    {% csrf_token %}
+                    <button type='submit' class='editbtn delete' name='delete' value='{{id.id}}' > Excluir </button>
+                </form>
+                
             </div>
           
         </div>
