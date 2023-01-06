@@ -1,9 +1,7 @@
 from django.shortcuts import render, HttpResponse, redirect
-from django.http import HttpResponseRedirect, JsonResponse
+
 
 from .models import Tasks
-# Create your views here.
-
 
 
 def index(request):
