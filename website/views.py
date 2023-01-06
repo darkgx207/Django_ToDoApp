@@ -23,14 +23,20 @@ def edit(request, int):
         return redirect('/') 
 
     if request.method == 'POST' and 'mudar' in request.POST:
-        return HttpResponse(Tasks.objects.filter(pk=int)) 
+        target = Tasks.objects.get(pk=int)
+        target.done = not target.done
+        target.save()
+        return redirect(index)
     # GET method
     return render(request ,'website/edit.html' , context)
 
 
 def create(request):
     context = {'db':Tasks.objects}
-    if request.method == 'POST':
-        pass
+    if request.method == 'POST' and request.POST.get('task') != '':
+        task = request.POST.get('task')
+        description = request.POST.get('description')
+        context['db'].create(task=task, description= description)
+        return redirect(index)
         
     return render(request,'website/create.html', context)

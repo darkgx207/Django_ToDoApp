@@ -7,10 +7,10 @@
     
     <br>
     <fieldset style='padding:2rem'>
-        <legend> <h1> Criar nova tarefa </h1> </legend>
+        <legend style='padding:0 0.5rem'> <h1> Criar nova tarefa </h1> </legend>
         <form method="post" autocomplete='off'>
             {% csrf_token %}
-            <h2> Nome da tarefa: <br><input type="text" name='name'></h2>
+            <h2> Nome da tarefa: <br><input type="text" name='task'></h2>
             <br>
             <h2> Descrição: </h2> 
             <textarea name="description" cols="30" rows="10" maxlength='255'></textarea> <br>
