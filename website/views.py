@@ -1,12 +1,17 @@
 from django.shortcuts import render, HttpResponse
-from .models import Tasks, OwnerTask
+from django.http import JsonResponse
+
+from .models import Tasks
 # Create your views here.
 
 values = Tasks.objects.all()
-test = [1,2,3,4,5,6,7,8,9,10,11,123,123,211]
+v2 = Tasks.objects
 
 def index(request):
     return render(request,'website/home.html',{
         'db':values,
-        'test':test,
+        'dd':v2,
     })
+
+def api(request):
+    return JsonResponse({'welcome':'merda'})

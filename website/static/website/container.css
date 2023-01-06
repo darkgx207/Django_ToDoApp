@@ -9,13 +9,13 @@
 }
 
 .taskblock {
-    background-color: rgb(241, 41, 101);
+    /* background-color: rgb(241, 41, 101); */
     margin: 0.5rem;
     border-radius: 0.5rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: solid rgb(230, 60, 9);
-    
-    
 }
 
 .taskblock h2 {
@@ -30,5 +30,18 @@
     background-color: rgb(175, 222, 228);
     transform: scale(1.01);
     transition: 0.3s;
-    
+}
+
+
+.taskblock .inputblock{
+    display: flex;
+    margin-right: 2rem;
+}
+
+.taskblock .inputblock input{
+    transform: scale(1.5);
+}
+
+.True {
+    background-color: rgb(71, 235, 22);
 }

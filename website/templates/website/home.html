@@ -2,18 +2,14 @@
 
 {% block content %}
 
-    
-{% comment %} {% for i in db %}
-    <div class="taskblock">
-         <h2> {{ i }} </h2>
-    </div>
-{% endfor %} {% endcomment %}
-
-{% for i in test %}
-    <div class="taskblock">
-         <h2> {{ i }} </h2>
-    </div>
-{% endfor %}
+    {% for i in db %}
+        <div class="taskblock ">
+            <h2> {{ i.done }}  </h2>
+            <div class="inputblock {{ i.done }}">
+                <input type="checkbox" name="{{i}}" id="{{i.id}}">
+            </div>
+        </div>
+    {% endfor %}
    
   
 {% endblock %} 
