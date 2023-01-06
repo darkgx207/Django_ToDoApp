@@ -11,3 +11,5 @@ def index(request):
         'db':Tasks.objects.all(),
     })
 
+def create(request, int):
+    return render(request ,'website/create.html' )
