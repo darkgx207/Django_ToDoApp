@@ -83,3 +83,10 @@ nav:hover h1 a:not(hover) {
     border-radius: 20px;
 
 }
+
+/* Window Classes */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

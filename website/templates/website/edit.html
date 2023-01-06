@@ -1,0 +1,29 @@
+{% extends 'website/core.html' %}
+
+{% block content %}
+    <div class="taskeditor ">
+        <div class="editheader center">
+            <h1>Tarefa:</h1> 
+            <p>{{ id }}</p>
+            <br>
+            <h1>Status:</h1> 
+            <p>{% if id.done %} Feito {% else %} Pendente {% endif %}</p>
+            <br>
+            <h1>Descrição:</h1> 
+            <div class="descriptionfield">
+                <p>{{ id.description }}</p>
+            </div>
+         
+
+            <div style="display:flex">
+                <button class='editbtn'> Editar </button>
+                <button class='editbtn delete'> Excluir </button>
+            </div>
+          
+        </div>
+
+        </div>
+       
+    </div>
+   
+{% endblock %}

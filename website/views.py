@@ -11,5 +11,8 @@ def index(request):
         'db':Tasks.objects.all(),
     })
 
-def create(request, int):
-    return render(request ,'website/create.html' )
+def edit(request, int):
+    return render(request ,'website/edit.html' , {
+        'id': Tasks.objects.get(id=int)
+        
+    })
