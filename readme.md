@@ -10,13 +10,19 @@
 
 ### Step 1 - Go to a desire folder in your terminal and paste:
 ```git
-
 git clone https://github.com/darkgx207/Django_ToDoApp.git
+```
+### Step 2 - activete a virtual environment and install the dependencies.
+```
+python -m venv venv    
 
+.\venv\Scripts\Activate
+
+pip install -r requirements.txt
 ```
 
 
-### Step 2 - inside Django_ToDoApp run:
+### Step 3 - inside Django_ToDoApp run:
 ```
 python manage.py makemigrations
 python manage.py migrate
@@ -25,7 +31,7 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-### Step 3 - In your browser's url field , type **localhost:8000**
+### Step 4 - In your browser's url field , type **localhost:8000**
 
 ## Now you're able to enjoy the application
 <br>

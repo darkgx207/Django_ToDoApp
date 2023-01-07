@@ -16,6 +16,8 @@ html {
     box-sizing: border-box;
     text-decoration: none;
 }
+
+ 
 h2 {
     color: aliceblue;
 }
@@ -65,7 +67,7 @@ nav:hover h1 a:not(hover) {
     background: linear-gradient(45deg,rgb(0, 0, 0),rgb(45, 54, 66));
     margin:auto;
     padding: 2rem;
-    width: 75rem;
+    width: 75vw;  /* 75rem */
     height: 40rem;
     border-radius: 15px; border-style: solid;
     box-shadow: 0.6rem 0.5rem 15px;
